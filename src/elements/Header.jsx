@@ -24,7 +24,7 @@ const Header = () => {
       <nav className='header-menu'>
         <ul>
         {menu.map((element)=>(
-            <Link to={element.url}>{element.name}</Link>
+           <li> <Link to={element.url}>{element.name}</Link></li>
         ))}
         </ul>
       </nav>

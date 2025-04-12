@@ -4,7 +4,7 @@ const Button = ({
   padding,
   borderColor,
   backgroundColor,
-  backgroundOpacity,
+  backgroundOpacity=1,
   textColor,
   children,
   className
@@ -34,7 +34,7 @@ const Button = ({
       style={{
         padding: padding,
         border: borderColor ? "1px solid" + borderColor : "unset",
-        background: backgroundColor ? `rgba(${hexToRgb(backgroundColor, "str")}, backgroundOpacity)` : "unset",
+        background: backgroundColor ? `rgba(${hexToRgb(backgroundColor, "str")}, ${backgroundOpacity})` : "unset",
         color:textColor ? textColor : "unset"
       }}
     >
