@@ -1,0 +1,23 @@
+.heading{
+    font-family: $font-oxanium;
+    font-weight: 700;
+    font-size: 64px;
+    color: #f5fbf2;
+    position: relative;
+    width: fit-content;
+    z-index: 1;
+    align-items: center;
+    display: flex;
+    height: fit-content;
+    &::before{
+        content: " ";
+        width: 110px;
+        height: 110px;
+        border-radius: 100%;
+        background-color: var(--bubbleColor);
+        display: block;
+        position: absolute;
+        z-index: -1;
+        left: -40px;
+    }
+}

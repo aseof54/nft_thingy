@@ -1,9 +1,11 @@
 header.header {
+    font-family: Work Sans;
     display: flex;
     justify-content: space-between;
     padding: 37px 80px;
     position: fixed;
     width: 100vw;
+    z-index: 10;
     
     .logo {
       width: 66px;

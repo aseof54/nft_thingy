@@ -61,9 +61,12 @@ const Banner = () => {
                     <div className='nft-info'>
                         <span>Current bid</span>
                         <h3>{nft.price}</h3>
+                    </div>
+                    <div className="nft-info">
                         <span>Ends in</span>
                         <h3>{nft.endsIn}</h3>
                     </div>
+                        
                 </div>
                 <div className="bottom-content">
                     <div className="artist">

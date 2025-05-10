@@ -1,8 +1,10 @@
 .banner {
-    display: flex;
-    padding: 0 0 0 60px;
+  font-family: oxanium;
+  display: flex;
+  padding: 0 0 0 60px;
+  margin-bottom: 200px;
     .left-part {
-        padding: 200px 20px 0 40px;
+        padding: 276px 20px 0 40px;
         width: 50%;
 
       .heading {
@@ -18,6 +20,7 @@
       }
   
       .buttons {
+        font-family: Work Sans;
         display: flex;
         gap: 48px;
         margin-bottom: 120px;
@@ -55,28 +58,64 @@
       .card {
         width: 558px;
         height: 718px;
+        padding-top: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         .top-content {
-            margin: 24px 12px;
+            margin: 0 21px 24px 21px;
             background-image: url("../assets/img/info_nft.svg");
             background-size: cover;
             background-repeat: no-repeat;
+            display: flex;
+            justify-content: space-between;
+            min-height: 98px;
+            align-items: center;
+            padding: 18px 54px;
           .nft-info {
+            color: #FFFFFF;
             span {
+              font-weight: 500;
+              font-size: 18px;
+              text-transform: capitalize;
             }
             h3 {
+              font-weight: 700;
+              font-size: 32px;
             }
           }
         }
   
         .bottom-content {
+          min-height: 142px;
+          background: #FFFFFF;
+          display: flex;
+          justify-content: space-between;
+          padding: 33px 60px;
           .artist {
-            span {
+            display: flex;
+            flex-direction: column;
+            span:first-child {
+              font-family: $font-oxanium;
+              font-weight: 600;
+              font-size: 28px;
+              letter-spacing: 0.07em;
+              color: #16091b;
             }
-            span {
+            span:last-child {
+              font-family: $font-work-sans;
+              font-weight: 400;
+              font-size: 24px;
+              line-height: 148%;
+              color: #594d5e;
             }
           }
   
           .btn {
+            font-family: $font-work-sans;
+            font-weight: 500;
+            font-size: 24px;
+            color: #000;
           }
         }
       }
